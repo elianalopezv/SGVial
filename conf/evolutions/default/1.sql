@@ -63,14 +63,6 @@ create table superficie (
   constraint pk_superficie primary key (id)
 );
 
-create table task (
-  id                            bigserial not null,
-  name                          varchar(255),
-  done                          boolean default false not null,
-  due_date                      timestamptz,
-  constraint pk_task primary key (id)
-);
-
 create index ix_bordillo_segmento_id on bordillo (segmento_id);
 alter table bordillo add constraint fk_bordillo_segmento_id foreign key (segmento_id) references segmento (id) on delete restrict on update restrict;
 
@@ -121,6 +113,4 @@ drop table if exists nomenclatura cascade;
 drop table if exists segmento cascade;
 
 drop table if exists superficie cascade;
-
-drop table if exists task cascade;
 

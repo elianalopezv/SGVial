@@ -1,0 +1,128 @@
+@(id: Int)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Malla vial - Segmentos</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" style="padding: 20px 0;">
+                <div class="col-12">
+                    <h1>Detalles del segmento @id</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card bg-light mb-6">
+                        <div class="card-header"><b>Información general</b></div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Longitud:</b> #longitud</p>
+                            <p class="card-text"><b>Tipo de vía:</b> #tipo_via</p>
+                            <p class="card-text"><b>Estrato:</b> #estrato</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card bg-light mb-6">
+                        <div class="card-header"><b>Nomenclatura</b></div>
+                        <div class="card-body">
+                            <p class="card-text"><b>Vía generadora:</b> #via_gen #n_via_gen</p>
+                            <p class="card-text"><b>Cruce desde:</b> #via_desde #n_desde</p>
+                            <p class="card-text"><b>Cruce hasta:</b> #via_hasta #n_hasta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="height: 80px;"></div>
+            <div class="row">
+                <div class="col-6">
+                    <h1>Calzadas</h1>
+                </div>
+                <div class="col-6">
+                    <h1>Bordillos</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Funcionalidad</th>
+                                <th scope="col">Superficie</th>
+                                <th scope="col">MDR</th>
+                                <th scope="col">OPI</th>
+                                <th scope="col">IRI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                                <td>mdo</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                                <td>fat</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                                <td>twitter</td>
+                                <td>twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-6">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Longitud</th>
+                                <th scope="col">Orden</th>
+                                <th scope="col">Indice condición</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>mdo</td>
+                                <td>mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>fat</td>
+                                <td>fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>twitter</td>
+                                <td>fat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
