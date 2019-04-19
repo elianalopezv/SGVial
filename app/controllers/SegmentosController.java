@@ -1,14 +1,13 @@
 package controllers;
 
+import models.Nomenclatura;
 import models.Segmento;
 import play.mvc.*;
-import play.db.ebean.Transactional;
 
 import java.util.List;
 
 public class SegmentosController extends Controller {
 
-    @Transactional
     public Result segmentos() {
 
         List<Segmento> segmentos = Segmento.find.all();
@@ -16,7 +15,9 @@ public class SegmentosController extends Controller {
     }
     public Result detalle(int id) {
 
-        return ok(views.html.detalle.render(id));
+        Segmento segmento = Segmento.find.byId((long) id);
+        Nomenclatura nomenclatura = Nomenclatura.find.query().where().eq("segmento", segmento).findOne();
+        return ok(views.html.detalle.render(id,segmento,nomenclatura));
     }
 
 }
