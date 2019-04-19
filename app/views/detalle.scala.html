@@ -1,4 +1,4 @@
-@(id: Int, segmento: Segmento, nomenclatura: Nomenclatura)
+@(id: Int, segmento: Segmento, nomenclatura: Nomenclatura, calzadas : List[Calzada], bordillos: List[Bordillo])
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,30 +59,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                                <td>mdo</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                                <td>fat</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>twitter</td>
-                                <td>twitter</td>
-                                <td>twitter</td>
-                            </tr>
+                            @for(calzada <- calzadas) {
+                                <tr>
+                                    <th scope="row">@calzada.id</th>
+                                    <td>@calzada.funcionalidad.funcionalidad</td>
+                                    <td>@calzada.superficie.superficie</td>
+                                    <td>@calzada.mdr</td>
+                                    <td>@calzada.opi</td>
+                                    <td>@calzada.iri</td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>
@@ -98,27 +84,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>mdo</td>
-                                <td>mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>fat</td>
-                                <td>fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>twitter</td>
-                                <td>fat</td>
-                            </tr>
+                            @for(bordillo <- bordillos) {
+                                <tr>
+                                    <th scope="row">@bordillo.id</th>
+                                    <td>@bordillo.estado.estado</td>
+                                    <td>@bordillo.longitud</td>
+                                    <td>@bordillo.orden</td>
+                                    <td>@bordillo.indice_condicion</td>
+                                </tr>
+                            }
                         </tbody>
                     </table>
                 </div>
