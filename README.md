@@ -37,7 +37,7 @@ __:pushpin: Modelo de base de datos:__
 
 * Crear una nueva base de datos
 * Click derecho en la nueva base de datos -> Restore
-* Agregar en el campo `Filename` el archivo `sgvial_bk` ubicado en la carpeta :file_folder:backups\
+* Agregar en el campo `Filename` el archivo `sgvial_bk` ubicado en la carpeta del proyecto
 * Restaurar
 
 ![Restore database][restore]
@@ -92,16 +92,17 @@ db.default.url="jdbc:postgresql://<hostname>:<port>/<database>?user=<user>&passw
 * Ejecutar el script en la base de datos
 * Refrescar la aplicación
 
-### Resultado
+### ¡Listo!
 
 Utilizando cualquiera de los dos métodos descritos anteriormente, la aplicación se debe ver así:
 
-
+![SGVial app][app]
 
 
 [1]: https://drive.google.com/file/d/19wdfAKOND3hYrgpUnLMHqAe0Y7-Zft4D/view
 [2]: https://drive.google.com/file/d/1ToTkKGbi8Ju2aZZw6LGlbALOrf7skm1x/view
 [ER]: https://github.com/elianalopezv/SGVial/blob/master/screens/ER.JPG
-[restore]: https://github.com/elianalopezv/SGVial/blob/master/screens/ER.JPG
+[restore]: https://github.com/elianalopezv/SGVial/blob/master/screens/restore.JPG
 [evolution]: https://github.com/elianalopezv/SGVial/blob/master/screens/evolution.JPG
-[insertions]: https://github.com/elianalopezv/SGVial/blob/master/screens/evolution.JPG
+[insertions]: https://github.com/elianalopezv/SGVial/blob/master/screens/insertions.JPG
+[app]: https://github.com/elianalopezv/SGVial/blob/master/screens/sgvial-app.gif
