@@ -37,7 +37,7 @@ __:pushpin: Modelo de base de datos:__
 
 * Crear una nueva base de datos
 * Click derecho en la nueva base de datos -> Restore
-* Agregar en el campo `Filename` el archivo `sgvial_bk` ubicado en la carpeta del proyecto
+* Agregar en el campo `Filename` el archivo `sgvial_bk` ubicado en la carpeta :file_folder:database\
 * Restaurar
 
 ![Restore database][restore]
@@ -82,12 +82,13 @@ db.default.url="jdbc:postgresql://<hostname>:<port>/<database>?user=<user>&passw
 
 #### 4. Insertar datos
 
-* Abrir un editor el archivo :file_folder:sql\insertions.sql
+* Abrir en un editor el archivo :file_folder:sql\insertions.sql
 * Este script copia los datos desde archivos .csv a las tablas. Se debe reemplazar la ruta a la carpeta :file_folder:csv\ por la nueva ruta local.
 
 
-:warning: Se recomienda copiar la carpeta :file_folder:csv\ a la misma ruta que aparece en el script, ya que en una ruta diferente es posible que postgresql no tenga acceso.
 ![Script de inserción][insertions]
+
+:warning: Se recomienda copiar la carpeta :file_folder:csv\ a la misma ruta que aparece en el script, ya que en una ruta diferente es posible que postgresql no tenga acceso.
 
 * Ejecutar el script en la base de datos
 * Refrescar la aplicación
